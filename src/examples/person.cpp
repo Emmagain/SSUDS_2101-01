@@ -1,4 +1,5 @@
 #include <person.h>
+#include <iostream>
 
 //When defining a method declared as part of a class, you must use Classname::
 
@@ -18,6 +19,12 @@ Person::Person(int starting_id, std::string starting_first_name, std::string sta
 	last_name = starting_last_name;
 	hourly_rate = 0;
 	hours_worked = 0;
+}
+
+Person::~Person()
+{
+	//Nothing needs to be unallocated or destroyed when an instance is deleted
+	std::cout << "Person '" << first_name << "' will be deleted from the system \n";
 }
 
 float Person::calculate_wage()

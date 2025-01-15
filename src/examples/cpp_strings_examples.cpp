@@ -22,8 +22,11 @@ int main()
     Person p;
     Person q;
 
-   // p.id = 42;
-   //p.first_name = "Bob";
+   p.setid(42);
+   p.setfirst_name("Bob");
 
-   // std::cout << p.id << " " << p.firstname;
+   int id = p.getid();
+   std::string name = p.getfirst_name();
+
+   std::cout << id << " " << name << "\n";
 }

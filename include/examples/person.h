@@ -25,6 +25,9 @@ public:
 
 	Person(int starting_id, std::string starting_first_name, std::string starting_last_name);
 
+	//DESTRUCTOR
+	~Person();
+
 public:
 	// METHODS -- a function that all instances of the class can call
 	float calculate_wage();
