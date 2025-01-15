@@ -22,6 +22,8 @@ int main()
     Person p;
     Person q;
 
-    //p.id = 42;
-    //p.first_name = "Bob";
+   // p.id = 42;
+   //p.first_name = "Bob";
+
+   // std::cout << p.id << " " << p.firstname;
 }
