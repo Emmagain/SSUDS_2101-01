@@ -1,10 +1,12 @@
 #include <person.h>
 #include <iostream>
 
+using namespace example;
+
 //When defining a method declared as part of a class, you must use Classname::
 
-Person::Person()
-{
+example::Person::Person()
+{ // ^^ doesn't need the "using namespace" line
 	id = -1;
 	first_name = "?";
 	last_name = "?";
@@ -24,7 +26,7 @@ Person::Person(int starting_id, std::string starting_first_name, std::string sta
 Person::~Person()
 {
 	//Nothing needs to be unallocated or destroyed when an instance is deleted
-	std::cout << "Person '" << first_name << "' will be deleted from the system \n";
+	//std::cout << "Person '" << first_name << "' will be deleted from the system \n";
 }
 
 float Person::calculate_wage()
@@ -73,9 +75,13 @@ void Person::setlast_name(std::string x)
 	last_name = x;
 }
 
-void Person::sethourly_rate(float x)
+void Person::sethourly_rate(float new_rate)
 {
-	hourly_rate = x;
+	if (new_rate < 0 || new_rate > 1000)
+	{
+		throw std::runtime_error("Invalid hourly rate: $" + std::to_string(new_rate));
+	}
+	hourly_rate = new_rate;
 }
 
 void Person::sethours_worked(unsigned int x)

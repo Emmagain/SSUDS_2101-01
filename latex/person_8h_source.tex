@@ -1,0 +1,62 @@
+\doxysection{person.\+h}
+\hypertarget{person_8h_source}{}\label{person_8h_source}\index{include/examples/person.h@{include/examples/person.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once\ }\textcolor{comment}{//\ same\ as\ indef/define\ below,\ but\ more\ efficient}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\#indef\ \_PERSON\_H\_}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\#define\ \_PERSON\_H\_}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//these\ prevent\ the\ compiler\ from\ ever\ seeing\ the\ declaration\ of\ a\ class\ more\ than\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//Make\ Person\ part\ of\ a\ namespace}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }example}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//generally,\ make\ attributes\ private\ and\ have\ methods\ to\ INDIRECTLY\ access\ them}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }Person}
+\DoxyCodeLine{00019\ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{comment}{//by\ default,\ all\ attributes\ and\ methods\ are\ private\ and\ can\ onyl\ be\ accessed\ within\ the\ class}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ ATTRIBUTES\ -\/-\/\ a\ variable\ that\ all\ instances\ of\ the\ class\ have}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::string\ first\_name;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::string\ last\_name;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ hourly\_rate;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ hours\_worked;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ CONSTRUCTOR}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ Person();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ Person(\textcolor{keywordtype}{int}\ starting\_id,\ std::string\ starting\_first\_name,\ std::string\ starting\_last\_name);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{comment}{//DESTRUCTOR}}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \string~Person();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ METHODS\ -\/-\/\ a\ function\ that\ all\ instances\ of\ the\ class\ can\ call}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classexample_1_1_person_a0a936ded69e39ce35f0dfa1cbe8a1c15}{calculate\_wage}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ getid();}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ std::string\ getfirst\_name();}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ std::string\ getlast\_name();}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ gethourly\_rate();}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ gethours\_worked();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setid(\textcolor{keywordtype}{int}\ x);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setfirst\_name(std::string\ x);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ setlast\_name(std::string\ x);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classexample_1_1_person_a3b845812303ca4e73168b92643194e17}{sethourly\_rate}}(\textcolor{keywordtype}{float}\ x);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ sethours\_worked(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ x);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \};}
+\DoxyCodeLine{00076\ \};}
+
+\end{DoxyCode}
