@@ -22,24 +22,6 @@ int main()
 
 	example::PersonDatabase Dbase(namef); //("..\media\Test.txt");
 
-	//Dbase.add_person(a);
-	//Dbase.add_person(b);
-
-	//std::cout << "Database:\n" << Dbase.to_string() << "\n";
-
-	//display menu with numbers for options
-	//take input
-	//1 = add person
-	//	propt for all necessary info
-	//	construct person
-	//	add person to database
-	//2 = remove person
-	//	prompt for id
-	//	remove person
-	//	print result
-	//3 = print the database
-	//	print the database
-	//display error if the wrong input is given
 	std::string s;
 	std::string o;
 	std::string f;

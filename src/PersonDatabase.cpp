@@ -1,7 +1,6 @@
 #include <PersonDatabase.h>
 #include <person.h>
 #include <iostream>
-#include <iomanip>
 #include <fstream>
 #include <string>
 #include <sstream>
@@ -39,7 +38,7 @@ example::PersonDatabase::PersonDatabase(std::string fname)
 		{
 
 			//if (fin.eof())
-			std::cout << temp_fname << "\n";
+			//std::cout << temp_fname << "\n";
 
 			//get a line's worth of data
 
@@ -137,14 +136,14 @@ unsigned int example::PersonDatabase::get_num_people()
 std::string example::PersonDatabase::to_string()
 {
 	std::ostringstream my_ostring;
-	my_ostring << "Person\tID\tHours\tRate\tMonthly Salary\n======\t==\t=====\t====\t==============\n";
+	my_ostring << "Person\t\tID\tHours\tRate\tMonthly Salary\n======\t\t==\t=====\t====\t==============\n";
 	float total = 0;
 	for (unsigned int i = 0; i < my_array_size; i++)
 	{
 		total += my_array_ptr[i].calculate_wage();
 		my_ostring << my_array_ptr[i].getfirst_name() << " " << my_array_ptr[i].getlast_name() << "\t" << my_array_ptr[i].getid() << "\t" << my_array_ptr[i].gethours_worked() << "\t$" << my_array_ptr[i].gethourly_rate() << "\t$" << my_array_ptr[i].calculate_wage() << "\n";
 	}
-	my_ostring << "================================================================================\n\t\t\tTotal: $" << total << "\n";
+	my_ostring << "======================================================\n\t\t\tTotal: $" << total << "\n";
 	std::string my_string = my_ostring.str();
 	return my_string;
 }
