@@ -1,0 +1,109 @@
+\doxysection{example\+::Person\+Database Class Reference}
+\hypertarget{classexample_1_1_person_database}{}\label{classexample_1_1_person_database}\index{example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classexample_1_1_person_database_a5845e87cbf0ef0dc90192020a9dfd8b9}{Person\+Database}} (std\+::string fname)
+\begin{DoxyCompactList}\small\item\em This is a constructor that takes one argument, it requires a file name to be given. It will open a file, and read in all the data, one \doxylink{classexample_1_1_person}{Person} object per line, then close the file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classexample_1_1_person_database_a84558db880f925669f94925eb06ea1e2}{\texorpdfstring{$\sim$}{\string~}\+Person\+Database}} ()
+\begin{DoxyCompactList}\small\item\em This is a constructor that does not require arguments, it creates the \doxylink{classexample_1_1_person_database}{Person\+Database} object and sets the array, array size, and array capacity to 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classexample_1_1_person_database_ab257ce8a2114416c72a6d87d363ab477}{add\+\_\+person}} (\mbox{\hyperlink{classexample_1_1_person}{Person}} p)
+\begin{DoxyCompactList}\small\item\em This method adds a given \doxylink{classexample_1_1_person}{Person} object to the array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classexample_1_1_person_database_ab41b9cffb3db2f8f427ebdedd6041900}{remove\+\_\+person}} (int remove\+\_\+id)
+\begin{DoxyCompactList}\small\item\em This method removes the \doxylink{classexample_1_1_person}{Person} object with the given id number from the array. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classexample_1_1_person_database_a2aac519399c6cea2a5be3995b6385516}{get\+\_\+num\+\_\+people}} ()
+\begin{DoxyCompactList}\small\item\em This method returns the number of \doxylink{classexample_1_1_person}{Person} objects currently in the array. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classexample_1_1_person_database_ad4c45ca3c7c3f83e94f43c0df0cbb55a}{to\+\_\+string}} ()
+\begin{DoxyCompactList}\small\item\em This method returns a string that lists all the information about each \doxylink{classexample_1_1_person}{Person} object in the database, with one \doxylink{classexample_1_1_person}{Person} object per line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classexample_1_1_person_database_a5845e87cbf0ef0dc90192020a9dfd8b9}\index{example::PersonDatabase@{example::PersonDatabase}!PersonDatabase@{PersonDatabase}}
+\index{PersonDatabase@{PersonDatabase}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{PersonDatabase()}{PersonDatabase()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_a5845e87cbf0ef0dc90192020a9dfd8b9} 
+example\+::\+Person\+Database\+::\+Person\+Database (\begin{DoxyParamCaption}\item[{std\+::string}]{fname}{}\end{DoxyParamCaption})}
+
+
+
+This is a constructor that takes one argument, it requires a file name to be given. It will open a file, and read in all the data, one \doxylink{classexample_1_1_person}{Person} object per line, then close the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fname} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classexample_1_1_person_database_a84558db880f925669f94925eb06ea1e2}\index{example::PersonDatabase@{example::PersonDatabase}!````~PersonDatabase@{\texorpdfstring{$\sim$}{\string~}PersonDatabase}}
+\index{````~PersonDatabase@{\texorpdfstring{$\sim$}{\string~}PersonDatabase}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PersonDatabase()}{\string~PersonDatabase()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_a84558db880f925669f94925eb06ea1e2} 
+example\+::\+Person\+Database\+::\texorpdfstring{$\sim$}{\string~}\+Person\+Database (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+This is a constructor that does not require arguments, it creates the \doxylink{classexample_1_1_person_database}{Person\+Database} object and sets the array, array size, and array capacity to 0. 
+
+This is the destructor, it writes all the data in the array into the given file, then frees the array 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classexample_1_1_person_database_ab257ce8a2114416c72a6d87d363ab477}\index{example::PersonDatabase@{example::PersonDatabase}!add\_person@{add\_person}}
+\index{add\_person@{add\_person}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{add\_person()}{add\_person()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_ab257ce8a2114416c72a6d87d363ab477} 
+void example\+::\+Person\+Database\+::add\+\_\+person (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classexample_1_1_person}{Person}}}]{p}{}\end{DoxyParamCaption})}
+
+
+
+This method adds a given \doxylink{classexample_1_1_person}{Person} object to the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classexample_1_1_person_database_a2aac519399c6cea2a5be3995b6385516}\index{example::PersonDatabase@{example::PersonDatabase}!get\_num\_people@{get\_num\_people}}
+\index{get\_num\_people@{get\_num\_people}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{get\_num\_people()}{get\_num\_people()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_a2aac519399c6cea2a5be3995b6385516} 
+unsigned int example\+::\+Person\+Database\+::get\+\_\+num\+\_\+people (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+This method returns the number of \doxylink{classexample_1_1_person}{Person} objects currently in the array. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{classexample_1_1_person_database_ab41b9cffb3db2f8f427ebdedd6041900}\index{example::PersonDatabase@{example::PersonDatabase}!remove\_person@{remove\_person}}
+\index{remove\_person@{remove\_person}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{remove\_person()}{remove\_person()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_ab41b9cffb3db2f8f427ebdedd6041900} 
+void example\+::\+Person\+Database\+::remove\+\_\+person (\begin{DoxyParamCaption}\item[{int}]{remove\+\_\+id}{}\end{DoxyParamCaption})}
+
+
+
+This method removes the \doxylink{classexample_1_1_person}{Person} object with the given id number from the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em remove\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classexample_1_1_person_database_ad4c45ca3c7c3f83e94f43c0df0cbb55a}\index{example::PersonDatabase@{example::PersonDatabase}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!example::PersonDatabase@{example::PersonDatabase}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily \label{classexample_1_1_person_database_ad4c45ca3c7c3f83e94f43c0df0cbb55a} 
+std\+::string example\+::\+Person\+Database\+::to\+\_\+string (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+This method returns a string that lists all the information about each \doxylink{classexample_1_1_person}{Person} object in the database, with one \doxylink{classexample_1_1_person}{Person} object per line. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Person\+Database.\+h\end{DoxyCompactItemize}

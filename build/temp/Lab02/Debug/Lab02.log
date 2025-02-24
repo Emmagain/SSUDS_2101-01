@@ -1,0 +1,38 @@
+﻿  lab02_main.cpp
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(59,34): warning C4305: 'argument': truncation from 'double' to 'const T'
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(59,34): warning C4305:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(59,34): warning C4305:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(59,34): warning C4305:             T=float
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(59,34): warning C4305:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(64,30): warning C4305: 'argument': truncation from 'double' to 'const T'
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(64,30): warning C4305:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(64,30): warning C4305:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(64,30): warning C4305:             T=float
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(64,30): warning C4305:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(66,30): warning C4305: 'argument': truncation from 'double' to 'const T'
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(66,30): warning C4305:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(66,30): warning C4305:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(66,30): warning C4305:             T=float
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(66,30): warning C4305:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(115,18): warning C4244: 'argument': conversion from 'float' to 'const T', possible loss of data
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(115,18): warning C4244:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(115,18): warning C4244:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(115,18): warning C4244:             T=int
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(115,18): warning C4244:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(116,18): warning C4244: 'argument': conversion from 'float' to 'const T', possible loss of data
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(116,18): warning C4244:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(116,18): warning C4244:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(116,18): warning C4244:             T=int
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(116,18): warning C4244:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02\array_list.h(254,26): warning C4244: '*=': conversion from 'double' to 'unsigned int', possible loss of data
+  (compiling source file '../../src/lab02/lab02_main.cpp')
+      C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02\array_list.h(254,26):
+      the template instantiation context (the oldest one first) is
+          C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(73,24):
+          see reference to class template instantiation 'ssuds::ArrayList<int>' being compiled
+          C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02\array_list.h(243,8):
+          while compiling class template member function 'void ssuds::ArrayList<int>::remove(unsigned int)'
+              C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab02\lab02_main.cpp(103,17):
+              see the first reference to 'ssuds::ArrayList<int>::remove' in 'main'
+  
+  Lab02.vcxproj -> C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\build\bin\Debug\Lab02_d.exe

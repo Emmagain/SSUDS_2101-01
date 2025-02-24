@@ -120,7 +120,7 @@ $(function(){initNavTree('person_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">//generally, make attributes private and have methods to INDIRECTLY access them</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html">   18</a></span>    <span class="keyword">class </span>Person</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html">   18</a></span>    <span class="keyword">class </span><a class="code hl_function" href="classexample_1_1_person.html#a13cef9dd175bcc612ae4fca575f91bc5">Person</a></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="comment">//by default, all attributes and methods are private and can onyl be accessed within the class</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
@@ -132,39 +132,58 @@ $(function(){initNavTree('person_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        std::string last_name;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">float</span> hourly_rate;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> hours_worked;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="comment">// CONSTRUCTOR</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        Person();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> hours_worked;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        Person(<span class="keywordtype">int</span> starting_id, std::string starting_first_name, std::string starting_last_name);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="comment">//DESTRUCTOR</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        ~Person();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="comment">// METHODS -- a function that all instances of the class can call</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a0a936ded69e39ce35f0dfa1cbe8a1c15">   57</a></span>        <span class="keywordtype">float</span> <a class="code hl_function" href="classexample_1_1_person.html#a0a936ded69e39ce35f0dfa1cbe8a1c15">calculate_wage</a>();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">int</span> getid();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        std::string getfirst_name();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        std::string getlast_name();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordtype">float</span> gethourly_rate();</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> gethours_worked();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">void</span> setid(<span class="keywordtype">int</span> x);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordtype">void</span> setfirst_name(std::string x);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">void</span> setlast_name(std::string x);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a3b845812303ca4e73168b92643194e17">   72</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classexample_1_1_person.html#a3b845812303ca4e73168b92643194e17">sethourly_rate</a>(<span class="keywordtype">float</span> x);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordtype">void</span> sethours_worked(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    };</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="comment">// CONSTRUCTOR</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a13cef9dd175bcc612ae4fca575f91bc5">   51</a></span>        <a class="code hl_function" href="classexample_1_1_person.html#a13cef9dd175bcc612ae4fca575f91bc5">Person</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#adcf8d285486d0d96cb35a7e52a0668be">   59</a></span>        <a class="code hl_function" href="classexample_1_1_person.html#adcf8d285486d0d96cb35a7e52a0668be">Person</a>(<span class="keywordtype">int</span> starting_id, std::string starting_first_name, std::string starting_last_name);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="comment">//DESTRUCTOR</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#ab88de04d70f4615a3563ae51ea611af6">   66</a></span>        <a class="code hl_function" href="classexample_1_1_person.html#ab88de04d70f4615a3563ae51ea611af6">~Person</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="comment">// METHODS -- a function that all instances of the class can call</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a0a936ded69e39ce35f0dfa1cbe8a1c15">   75</a></span>        <span class="keywordtype">float</span> <a class="code hl_function" href="classexample_1_1_person.html#a0a936ded69e39ce35f0dfa1cbe8a1c15">calculate_wage</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#acfdc4000dfe8df6541e01a751f11b1ce">   81</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="classexample_1_1_person.html#acfdc4000dfe8df6541e01a751f11b1ce">getid</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a2184e3f7f185fb636f59a36241a3d8b5">   87</a></span>        std::string <a class="code hl_function" href="classexample_1_1_person.html#a2184e3f7f185fb636f59a36241a3d8b5">getfirst_name</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        std::string getlast_name();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a92d2a5504d5b501d797c8ff78bd6bd20">   94</a></span>        <span class="keywordtype">float</span> <a class="code hl_function" href="classexample_1_1_person.html#a92d2a5504d5b501d797c8ff78bd6bd20">gethourly_rate</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a447f7e5b55bbea6c0c49e8f6038aa110">  100</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classexample_1_1_person.html#a447f7e5b55bbea6c0c49e8f6038aa110">gethours_worked</a>();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a0776f9024be1ab72cb8c7ef4bbced46a">  106</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classexample_1_1_person.html#a0776f9024be1ab72cb8c7ef4bbced46a">setid</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a87c171e19547be69dea0873a50b75e22">  112</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classexample_1_1_person.html#a87c171e19547be69dea0873a50b75e22">setfirst_name</a>(std::string x);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordtype">void</span> setlast_name(std::string x);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a71c31ce26ef872961161dfbe9527dfe4">  119</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classexample_1_1_person.html#a71c31ce26ef872961161dfbe9527dfe4">sethourly_rate</a>(<span class="keywordtype">float</span> new_rate);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="classexample_1_1_person.html#a8cf554277d872015c1987bf031d7f26f">  125</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classexample_1_1_person.html#a8cf554277d872015c1987bf031d7f26f">sethours_worked</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    };</div>
 </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>};</div>
+<div class="ttc" id="aclassexample_1_1_person_html_a0776f9024be1ab72cb8c7ef4bbced46a"><div class="ttname"><a href="classexample_1_1_person.html#a0776f9024be1ab72cb8c7ef4bbced46a">example::Person::setid</a></div><div class="ttdeci">void setid(int x)</div><div class="ttdoc">This sets a Person&#39;s id number.</div></div>
 <div class="ttc" id="aclassexample_1_1_person_html_a0a936ded69e39ce35f0dfa1cbe8a1c15"><div class="ttname"><a href="classexample_1_1_person.html#a0a936ded69e39ce35f0dfa1cbe8a1c15">example::Person::calculate_wage</a></div><div class="ttdeci">float calculate_wage()</div><div class="ttdoc">This calculates a Person&#39;s wage.</div></div>
-<div class="ttc" id="aclassexample_1_1_person_html_a3b845812303ca4e73168b92643194e17"><div class="ttname"><a href="classexample_1_1_person.html#a3b845812303ca4e73168b92643194e17">example::Person::sethourly_rate</a></div><div class="ttdeci">void sethourly_rate(float x)</div><div class="ttdoc">This sets the hourly rate.</div></div>
+<div class="ttc" id="aclassexample_1_1_person_html_a13cef9dd175bcc612ae4fca575f91bc5"><div class="ttname"><a href="classexample_1_1_person.html#a13cef9dd175bcc612ae4fca575f91bc5">example::Person::Person</a></div><div class="ttdeci">Person()</div><div class="ttdoc">This is the &quot;default&quot; constructor that doesn&#39;t require parameters.</div></div>
+<div class="ttc" id="aclassexample_1_1_person_html_a2184e3f7f185fb636f59a36241a3d8b5"><div class="ttname"><a href="classexample_1_1_person.html#a2184e3f7f185fb636f59a36241a3d8b5">example::Person::getfirst_name</a></div><div class="ttdeci">std::string getfirst_name()</div><div class="ttdoc">This returns a Person&#39;s name.</div></div>
+<div class="ttc" id="aclassexample_1_1_person_html_a447f7e5b55bbea6c0c49e8f6038aa110"><div class="ttname"><a href="classexample_1_1_person.html#a447f7e5b55bbea6c0c49e8f6038aa110">example::Person::gethours_worked</a></div><div class="ttdeci">unsigned int gethours_worked()</div><div class="ttdoc">This returns the number of hours a Person has worked.</div></div>
+<div class="ttc" id="aclassexample_1_1_person_html_a71c31ce26ef872961161dfbe9527dfe4"><div class="ttname"><a href="classexample_1_1_person.html#a71c31ce26ef872961161dfbe9527dfe4">example::Person::sethourly_rate</a></div><div class="ttdeci">void sethourly_rate(float new_rate)</div><div class="ttdoc">This sets the hourly rate.</div></div>
+<div class="ttc" id="aclassexample_1_1_person_html_a87c171e19547be69dea0873a50b75e22"><div class="ttname"><a href="classexample_1_1_person.html#a87c171e19547be69dea0873a50b75e22">example::Person::setfirst_name</a></div><div class="ttdeci">void setfirst_name(std::string x)</div><div class="ttdoc">This sets a Person&#39;s name.</div></div>
+<div class="ttc" id="aclassexample_1_1_person_html_a8cf554277d872015c1987bf031d7f26f"><div class="ttname"><a href="classexample_1_1_person.html#a8cf554277d872015c1987bf031d7f26f">example::Person::sethours_worked</a></div><div class="ttdeci">void sethours_worked(unsigned int x)</div><div class="ttdoc">This sets the number of hours a Person has worked.</div></div>
+<div class="ttc" id="aclassexample_1_1_person_html_a92d2a5504d5b501d797c8ff78bd6bd20"><div class="ttname"><a href="classexample_1_1_person.html#a92d2a5504d5b501d797c8ff78bd6bd20">example::Person::gethourly_rate</a></div><div class="ttdeci">float gethourly_rate()</div><div class="ttdoc">This returns a Person&#39;s hourly rate.</div></div>
+<div class="ttc" id="aclassexample_1_1_person_html_ab88de04d70f4615a3563ae51ea611af6"><div class="ttname"><a href="classexample_1_1_person.html#ab88de04d70f4615a3563ae51ea611af6">example::Person::~Person</a></div><div class="ttdeci">~Person()</div><div class="ttdoc">This is the destructor.</div></div>
+<div class="ttc" id="aclassexample_1_1_person_html_acfdc4000dfe8df6541e01a751f11b1ce"><div class="ttname"><a href="classexample_1_1_person.html#acfdc4000dfe8df6541e01a751f11b1ce">example::Person::getid</a></div><div class="ttdeci">int getid()</div><div class="ttdoc">This returns a Person&#39;s id number.</div></div>
+<div class="ttc" id="aclassexample_1_1_person_html_adcf8d285486d0d96cb35a7e52a0668be"><div class="ttname"><a href="classexample_1_1_person.html#adcf8d285486d0d96cb35a7e52a0668be">example::Person::Person</a></div><div class="ttdeci">Person(int starting_id, std::string starting_first_name, std::string starting_last_name)</div><div class="ttdoc">This is the constructor that requires parameters.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

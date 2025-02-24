@@ -1,0 +1,13 @@
+﻿  lab03_main.cpp
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02\array_list.h(419,19): warning C4018: '>': signed/unsigned mismatch
+  (compiling source file '../../../src/lab03/lab03_main.cpp')
+      C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02\array_list.h(419,19):
+      the template instantiation context (the oldest one first) is
+          C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02\array_list.h(353,9):
+          while compiling class 'ssuds::ArrayList<float>::AlIterator'
+          C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02\array_list.h(412,15):
+          while compiling class template member function 'ssuds::ArrayList<float>::AlIterator ssuds::ArrayList<float>::AlIterator::operator ++(void)'
+              C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\src\lab03\lab03_main.cpp(55,3):
+              see the first reference to 'ssuds::ArrayList<float>::AlIterator::operator ++' in 'main'
+  
+  Lab03.vcxproj -> C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\build\Lab03\bin\Debug\Lab03_d.exe

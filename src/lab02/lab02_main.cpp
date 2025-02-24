@@ -3,7 +3,7 @@
 
 int main()
 {
-	/*
+	
 	//TEST EVERY FUNCTION FOR FLOAT
 
 	// The basic test program (for floats)
@@ -129,13 +129,8 @@ int main()
 	int_index = int_list.find(3, 2);
 	std::cout << "\tValue '3' is also at index " << int_index << "\n";
 
-	*/
+	
 
-	//TEST EVERY FUNCTION FOR PERSON OBJECT
-	// The basic test program (for person objects)
-	ssuds::ArrayList<float> person_list;
-
-	std::cout << "test1:\n=====\n";
 }
 
 /*

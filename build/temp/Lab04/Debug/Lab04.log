@@ -1,0 +1,9 @@
+﻿  lab04_main.cpp
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\dependencies\SFML-3.0.0-sdk\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
+  (compiling source file '../../src/lab04/lab04_main.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\stdexcept(100,19):
+      see declaration of 'std::runtime_error'
+      C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\dependencies\SFML-3.0.0-sdk\include\SFML\System\Exception.hpp(41,23):
+      see declaration of 'sf::Exception'
+  
+  Lab04.vcxproj -> C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\bin\Debug\Lab04_d.exe
