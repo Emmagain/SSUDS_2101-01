@@ -50,7 +50,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>..\bin\$(Configuration)\</OutDir>
+    <OutDir>..\..\bin\$(Configuration)\</OutDir>
     <IntDir>..\temp\$(ProjectName)\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
@@ -64,7 +64,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>..\include\;..\include\examples\;..\include\lab02\;..\include\lab02;C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\include\;..\include\examples\;..\include\lab02\;..\include\lab02;C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

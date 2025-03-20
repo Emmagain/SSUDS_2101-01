@@ -231,9 +231,9 @@ namespace ssuds
 		/// <param name="index"></param>
 		/// <returns></returns>
 		/// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		const T& at(unsigned int index)
+		T& at(unsigned int index) const
 		{
-			const T& index_ref = my_array_ptr[index];
+			T& index_ref = my_array_ptr[index];
 			return index_ref;
 		}
 
@@ -272,7 +272,7 @@ namespace ssuds
 
 			if (my_array_size <= (0.25 * my_array_capacity))
 			{
-				my_array_capacity *= 0.5;
+				my_array_capacity = my_array_capacity/2;
 				T* temp_array = new T[my_array_capacity];
 
 				for (unsigned int i = 0; i < my_array_size; i++)
@@ -290,7 +290,7 @@ namespace ssuds
 		/// <param name="ref"></param>
 		/// <returns></returns>
 		/// //////////////////////////////////////////////// NOT DONE YET /////////////////////////////////////////////////////////////////////////////////////////////////
-		int find(const T& value_ref, unsigned int start_index=0)
+		int find(const T& value_ref, unsigned int start_index=0) const
 		{
 			for (unsigned int i = start_index; i < my_array_size; i++)
 			{
@@ -357,8 +357,8 @@ namespace ssuds
 			//never make a copy of any data
 			//a reference to the array list OR a pointer to the array list
 
-			ArrayList* my_list_ptr;		//my_list
-			int my_index;				//my position
+			const ArrayList* my_list_ptr;		//my_list
+			int my_index;		//my position
 			bool is_reverse;			//tells if the iterator goes through normally or in reverse
 
 		public:
@@ -388,7 +388,7 @@ namespace ssuds
 			/// <param name="ptr"></param>
 			/// <param name="starting_index"></param>
 			/// <param name="if_reverse"></param>
-			AlIterator(ArrayList* ptr, int starting_index, bool if_reverse)
+			AlIterator(const ArrayList* ptr, int starting_index, bool if_reverse)
 			{
 				my_list_ptr = ptr;
 				my_index = starting_index;
@@ -416,7 +416,7 @@ namespace ssuds
 				if (is_reverse == false)
 				{
 					my_index++;
-					if (my_index > my_list_ptr->my_array_size-1)
+					if (my_index > int(my_list_ptr->my_array_size-1))
 					{
 						my_list_ptr = nullptr;
 					}
@@ -440,8 +440,8 @@ namespace ssuds
 			{
 				if (is_reverse == true)
 				{
-					my_index++;
-					if (my_index > my_list_ptr->my_array_size-1)
+					my_index--;
+					if (my_index < 0)
 					{
 						my_list_ptr = nullptr;
 					}
@@ -457,10 +457,19 @@ namespace ssuds
 				return *this;
 			}
 
-			bool operator!=(const AlIterator& other)
+			bool operator!=(const AlIterator& other) const
 			{
 				//determine if it is equal or not
 				if (my_list_ptr != other.my_list_ptr || my_index != other.my_index || is_reverse != other.is_reverse)
+					return true;
+				else
+					return false;
+			}
+
+			bool operator==(const AlIterator& other) const
+			{
+				//determine if it is equal or not
+				if (my_list_ptr == other.my_list_ptr && my_index == other.my_index && is_reverse == other.is_reverse)
 					return true;
 				else
 					return false;
@@ -472,7 +481,7 @@ namespace ssuds
 		/// This is the begin method used for iteration. It points to the first item in the array, so that the array can be iterated through completely.
 		/// </summary>
 		/// <returns></returns>
-		AlIterator begin()
+		AlIterator begin() const
 		{
 			// (this) is a pointer to the instance of ArrayList that the method is called for
 			AlIterator temp(this, 0, false);
@@ -483,7 +492,7 @@ namespace ssuds
 		/// This is the end method used for iteration. It is used to check when you have passed the last item at the end of the array, so that you can stop iterating.
 		/// </summary>
 		/// <returns></returns>
-		AlIterator end()
+		AlIterator end() const
 		{
 			//end() uses the default constructor, which sets my_list_ptr to null. This will be the flag to say we have reached the end of the array
 			AlIterator temp(nullptr, my_array_size, false);
@@ -494,7 +503,7 @@ namespace ssuds
 		/// This is the begin method used for reverse iteration. It points to the last item in the array, so that the array can be iterated through from end to beginning.
 		/// </summary>
 		/// <returns></returns>
-		AlIterator rbegin()
+		AlIterator rbegin() const
 		{
 			//set to the end of the array list
 			AlIterator temp(this, my_array_size-1, true);
@@ -505,7 +514,7 @@ namespace ssuds
 		/// This is the end method for reverse iteration. It is used to check when you reach the first item in the array.
 		/// </summary>
 		/// <returns></returns>
-		AlIterator rend()
+		AlIterator rend() const
 		{
 			AlIterator temp(nullptr, -1, true);
 			return temp;
