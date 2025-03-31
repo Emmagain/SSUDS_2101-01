@@ -338,11 +338,11 @@ namespace ssuds
 		{
 			//throw out any current data and make a deep copy of 'other'
 			delete[] my_array_ptr;
-			my_array_ptr = new T[other->my_array_capacity];
-			my_array_size = other->my_array_size;
+			my_array_ptr = new T[other.my_array_capacity];
+			my_array_size = other.my_array_size;
 			for (unsigned int i = 0; i < my_array_size; i++)
 			{
-				my_array_ptr[i] = other->my_array_ptr[i];
+				my_array_ptr[i] = other.my_array_ptr[i];
 			}
 
 			return *this;

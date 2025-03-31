@@ -13,6 +13,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab04", "Lab04\Lab04.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTests", "Lab04\GoogleTests.vcxproj", "{FDF6170C-7E00-42FF-8958-3D141103F17D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab05", "Lab05\Lab05\Lab05.vcxproj", "{DBC274B6-77CC-4456-B2D7-B8F133F09DE4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab06", "Lab06\Lab06\Lab06.vcxproj", "{3B7B83C7-40A8-4876-8196-253A1FF08323}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -39,6 +43,14 @@ Global
 		{FDF6170C-7E00-42FF-8958-3D141103F17D}.Debug|x64.Build.0 = Debug|x64
 		{FDF6170C-7E00-42FF-8958-3D141103F17D}.Release|x64.ActiveCfg = Release|x64
 		{FDF6170C-7E00-42FF-8958-3D141103F17D}.Release|x64.Build.0 = Release|x64
+		{DBC274B6-77CC-4456-B2D7-B8F133F09DE4}.Debug|x64.ActiveCfg = Debug|x64
+		{DBC274B6-77CC-4456-B2D7-B8F133F09DE4}.Debug|x64.Build.0 = Debug|x64
+		{DBC274B6-77CC-4456-B2D7-B8F133F09DE4}.Release|x64.ActiveCfg = Release|x64
+		{DBC274B6-77CC-4456-B2D7-B8F133F09DE4}.Release|x64.Build.0 = Release|x64
+		{3B7B83C7-40A8-4876-8196-253A1FF08323}.Debug|x64.ActiveCfg = Debug|x64
+		{3B7B83C7-40A8-4876-8196-253A1FF08323}.Debug|x64.Build.0 = Debug|x64
+		{3B7B83C7-40A8-4876-8196-253A1FF08323}.Release|x64.ActiveCfg = Release|x64
+		{3B7B83C7-40A8-4876-8196-253A1FF08323}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

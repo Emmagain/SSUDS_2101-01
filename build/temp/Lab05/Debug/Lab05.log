@@ -1,0 +1,14 @@
+﻿  lab05_main.cpp
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\include\lab05\array_list_utility.h(109,29): error C2440: 'return': cannot convert from 'std::runtime_error' to 'int'
+  (compiling source file '../../../src/lab05/lab05_main.cpp')
+      C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\include\lab05\array_list_utility.h(109,29):
+      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\include\lab05\array_list_utility.h(109,29):
+      the template instantiation context (the oldest one first) is
+          C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(27,21):
+          see reference to function template instantiation 'int ssuds::binary_search<float>(ssuds::ArrayList<float> &,T,bool)' being compiled
+          with
+          [
+              T=float
+          ]
+  
