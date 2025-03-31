@@ -61,3 +61,19 @@ TEST(ALUTest, quick_sort)
 	EXPECT_EQ(flist[6], 3.8f);
 	EXPECT_EQ(flist[7], 4.5f);
 }
+
+TEST(ALUTest, rev_quick_sort)
+{
+	ssuds::ArrayList<float> flist = { 4.5f,2.1f,2.0f,0.1f,1.6f,3.2f,2.8f,3.8f };
+	int num_swaps = ssuds::quick_sort(flist, 0, 7, ssuds::sort_order::DESCENDING);
+	std::cout << "\n" << num_swaps << "\n";
+	std::cout << flist << "\n";
+	EXPECT_EQ(flist[0], 4.5f);
+	EXPECT_EQ(flist[1], 3.8f);
+	EXPECT_EQ(flist[2], 3.2f);
+	EXPECT_EQ(flist[3], 2.8f);
+	EXPECT_EQ(flist[4], 2.1f);
+	EXPECT_EQ(flist[5], 2.0f);
+	EXPECT_EQ(flist[6], 1.6f);
+	EXPECT_EQ(flist[7], 0.1f);
+}

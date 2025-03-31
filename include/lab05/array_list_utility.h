@@ -143,7 +143,7 @@ namespace ssuds
 	}
 
 	template <typename T>
-	std::pair<int,int> partition(ArrayList<T>& my_list, int left_index, int right_index)
+	std::pair<int,int> partition(ArrayList<T>& my_list, int left_index, int right_index, sort_order order)
 	{ //ASCENDING
 		// Get index of pivot
 		int mid_index = (left_index + right_index) / 2;
@@ -156,13 +156,27 @@ namespace ssuds
 		for (int i = left_index; i <= right_index; i++)
 		{
 			// Note : python range stops before 2nd arg.
-			if (my_list[i] <= pivot_value)//my_list[i] is the pivot or should go to its left (changes for descending)
+			if (order == ssuds::sort_order::ASCENDING)
 			{
-				swap<T>(my_list[i], my_list[swap_index]);
-				num_swap++;
-				swap_index += 1;
-				// Return index of pivot value
-				//return swap_index - 1;
+				if (my_list[i] <= pivot_value)//my_list[i] is the pivot or should go to its left (changes for descending)
+				{
+					swap<T>(my_list[i], my_list[swap_index]);
+					num_swap++;
+					swap_index += 1;
+					// Return index of pivot value
+					//return swap_index - 1;
+				}
+			}
+			else if (order == ssuds::sort_order::DESCENDING)
+			{
+				if (my_list[i] >= pivot_value)//my_list[i] is the pivot or should go to its left (changes for descending)
+				{
+					swap<T>(my_list[i], my_list[swap_index]);
+					num_swap++;
+					swap_index += 1;
+					// Return index of pivot value
+					//return swap_index - 1;
+				}
 			}
 		}
 		return std::make_pair(swap_index - 1, num_swap);
@@ -179,12 +193,12 @@ namespace ssuds
 		}
 
 		std::pair temp = std::make_pair(0,0);
-		temp = partition<T>(my_list, left_index, right_index);
+		temp = partition<T>(my_list, left_index, right_index, order);
 		int pivot_index = temp.first;
 		num_swap += temp.second;
 		// pivot is in proper place.Sort halves on either side
-		num_swap += quick_sort<T>(my_list, left_index, pivot_index - 1, ssuds::sort_order::ASCENDING);
-		num_swap += quick_sort<T>(my_list, pivot_index + 1, right_index, ssuds::sort_order::ASCENDING);
+		num_swap += quick_sort<T>(my_list, left_index, pivot_index - 1, order);
+		num_swap += quick_sort<T>(my_list, pivot_index + 1, right_index, order);
 	} 
 
 
