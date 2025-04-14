@@ -47,11 +47,11 @@ namespace ssuds
 		ArrayList(ArrayList&& other) //&& means that it is a move constructor
 		{
 			//steal the identity of other - similar to shallow copy
-			my_array_ptr = other->my_array_ptr;
-			my_array_size = other->my_array_size;
-			my_array_capacity = other->my_array_capacity;
+			my_array_ptr = other.my_array_ptr;//->my_array_ptr;
+			my_array_size = other.my_array_size;//->my_array_size;
+			my_array_capacity = other.my_array_capacity;//->my_array_capacity;
 			//now set other to not point to the array anymore. The new pointer is now the only pointer for the array.
-			other->my_array_ptr = nullptr;
+			other.my_array_ptr = nullptr;//->my_array_ptr = nullptr;
 		}
 
 		/// <summary>

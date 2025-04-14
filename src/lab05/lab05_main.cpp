@@ -23,7 +23,7 @@ int main(int args, char** argv)
 		ssuds::ArrayList<float> flist;
 		for (int i = 0; i <= sample_size; i++)
 		{
-			flist.append(distribution(generator));
+			flist.append(distribution(generator)); 
 		}
 		end = std::chrono::steady_clock::now();
 		std::chrono::nanoseconds elapsed;
@@ -68,7 +68,7 @@ int main(int args, char** argv)
 		end = std::chrono::steady_clock::now();
 		std::chrono::milliseconds elapsedm;
 		elapsedm = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
-		unsigned long int time_quicksort = elapsed.count();
+		unsigned long int time_quicksort = elapsedm.count();
 		fp << time_quicksort << ",  ";
 
 		//BUBBLESORT
@@ -79,7 +79,7 @@ int main(int args, char** argv)
 			end = std::chrono::steady_clock::now();
 			//std::chrono::milliseconds elapsed;
 			elapsedm = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
-			unsigned long int time_bubblesort = elapsed.count();
+			unsigned long int time_bubblesort = elapsedm.count();
 			fp << time_bubblesort << ",  ";
 		}
 		else
@@ -96,7 +96,7 @@ int main(int args, char** argv)
 		end = std::chrono::steady_clock::now();
 		//std::chrono::milliseconds elapsed;
 		elapsedm = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
-		unsigned long int time_binarys = elapsed.count();
+		unsigned long int time_binarys = elapsedm.count();
 		fp << time_binarys << ",  ";
 
 		//LINEAR SEARCH (FIND)
@@ -108,7 +108,7 @@ int main(int args, char** argv)
 		end = std::chrono::steady_clock::now();
 		//std::chrono::milliseconds elapsed;
 		elapsedm = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
-		unsigned long int time_linears = elapsed.count();
+		unsigned long int time_linears = elapsedm.count();
 		fp << time_linears << ",  ";
 
 		fp << "\n";

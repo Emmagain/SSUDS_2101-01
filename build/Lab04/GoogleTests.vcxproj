@@ -23,6 +23,7 @@
     <ClCompile Include="..\..\src\lab04\tests_main.cpp" />
     <ClCompile Include="..\..\src\lab05\array_list_utility_tests.cpp" />
     <ClCompile Include="..\..\src\lab06\linked_list_tests.cpp" />
+    <ClCompile Include="..\..\src\lab06\ordered_set_tests.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
