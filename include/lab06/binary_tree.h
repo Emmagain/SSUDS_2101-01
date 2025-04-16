@@ -14,7 +14,7 @@ namespace ssuds
 		// Just like LinkedList, I don't want outside users to see this AT ALL!!!
 		class Node
 		{
-		protected:
+		public:
 			T mData;
 			Node* mLeft;
 			Node* mRight;
@@ -271,45 +271,13 @@ namespace ssuds
 					list.append(mData);
 				}
 			}
-
-			/*unsigned int get_depth_recursive(const T& val, unsigned int cur_height)
-			{
-
-				if (mData == val)
-				{
-					cur_height++;
-					return cur_height;
-				}
-				if (mLeft == nullptr && mRight == nullptr)
-				{
-					//cur_height++;
-					//return cur_height;
-					throw std::runtime_error("Value is not in set");
-				}
-				else
-				{
-					unsigned int lHeight = mLeft->get_height_recursive(val, cur_height);
-					unsigned int rHeight = mRight->get_height_recursive(val, cur_height);
-					if (lHeight >= rHeight)
-					{
-						cur_height += lHeight;
-						return cur_height;
-					}
-					else
-					{
-						cur_height += rHeight;
-						return cur_height;
-					}
-				}
-			}*/
-
 		}; // end of Node class
 
 		
 		// Attributes for OrderedSet itself.
 	private:
 		unsigned int mSize;
-		Node* mRoot;
+		Node* mRoot;  
 	public:
 		OrderedSet() : mSize(0), mRoot(nullptr)
 		{
@@ -420,7 +388,7 @@ namespace ssuds
 
 		// ----------------------------------------------------------------------- ITERATOR SUBCLASS -------------------------------------------------------------------------------------------------------
 		
-		friend Node* pop(ArrayList<Node*> list)
+		friend Node* pop(ArrayList<Node*>& list)
 		{
 			Node* temp = list[list.size() - 1];
 			list.remove(list.size() - 1);
@@ -430,25 +398,12 @@ namespace ssuds
 		class OSIterator
 		{
 		protected:
+
 			ArrayList<Node*> NStack;
 			Node* Cur;
+
 		public:
 
-			/*OSIterator()
-			{
-				Cur = MRoot;
-				while (Cur != NULL)
-				{
-					NStack.append(Cur);
-					Cur = Cur->mLeft;
-				}
-				if (NStack.size() != 0)
-				{
-					Cur = pop(NStack);
-				}
-			}*/
-
-			//constructor that takes a node pointer
 			OSIterator(Node* rootNode)
 			{
 				Cur = rootNode;
@@ -475,6 +430,7 @@ namespace ssuds
 				{
 					Cur = pop(NStack);
 				}
+				return *this;
 			}
 
 			const T& operator*()
@@ -482,10 +438,9 @@ namespace ssuds
 				return Cur->mData;
 			}
 
-			//comparison operators (!=, =)
 			bool operator!=(const OSIterator& other) const
 			{
-				if (NStack != other.NStack || Cur != other.Cur)
+				if ( Cur != other.Cur)
 				{
 					return true;
 				}
@@ -497,7 +452,7 @@ namespace ssuds
 
 			bool operator ==(const OSIterator& other) const
 			{
-				if (NStack == other.NStack && Cur == other.Cur)
+				if ( Cur == other.Cur)
 				{
 					return true;
 				}
@@ -508,13 +463,13 @@ namespace ssuds
 			}
 		};
 
-		OSIterator begin() const	//NOT DONE --- NEEDS TESTED -- pass root node
+		OSIterator begin()		
 		{
 			OSIterator temp(mRoot);
 			return temp;
 		}
 
-		OSIterator end() const		//NOT DONE --- NEEDS TESTED -- pass NULL
+		OSIterator end()	
 		{
 			OSIterator temp(nullptr);
 			return temp;

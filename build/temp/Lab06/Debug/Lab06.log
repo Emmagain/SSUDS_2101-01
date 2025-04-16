@@ -1,12 +1,4 @@
 ﻿  binary__tree_main.cpp
-C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\include\lab06\binary_tree.h(488,16): error C2676: binary '!=': 'const ssuds::ArrayList<ssuds::OrderedSet<float>::Node *>' does not define this operator or a conversion to a type acceptable to the predefined operator
-  (compiling source file '../../../src/lab06/binary__tree_main.cpp')
-      C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\include\lab06\binary_tree.h(488,16):
-      the template instantiation context (the oldest one first) is
-          C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\include\lab06\binary_tree.h(430,9):
-          while compiling class 'ssuds::OrderedSet<float>::OSIterator'
-          C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\include\lab06\binary_tree.h(486,9):
-          while compiling class template member function 'bool ssuds::OrderedSet<float>::OSIterator::operator !=(const ssuds::OrderedSet<float>::OSIterator &) const'
-              C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab06\binary__tree_main.cpp(48,2):
-              see the first reference to 'ssuds::OrderedSet<float>::OSIterator::operator !=' in 'main'
-  
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\include\lab06\binary_tree.h(109,1): warning C4715: 'ssuds::OrderedSet<float>::Node::contains_recursive': not all control paths return a value
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\include\lab06\binary_tree.h(75,1): warning C4715: 'ssuds::OrderedSet<float>::Node::insert_recursive': not all control paths return a value
+  Lab06.vcxproj -> C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\build\bin\Debug\Lab06.exe

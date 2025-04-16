@@ -83,7 +83,7 @@ TEST(OSTest, Clear) //NOT YET TESTED
 	EXPECT_EQ(fset.size(), 0);
 	EXPECT_EQ(fset.contains(1.9f), false);
 }
-/*
+
 TEST(OSTest, Iterator)
 {
 	ssuds::OrderedSet<float> fset; 
@@ -99,4 +99,3 @@ TEST(OSTest, Iterator)
 	++flit;
 	EXPECT_EQ(flit, fset.end());
 }
-*/
