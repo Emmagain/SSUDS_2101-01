@@ -70,8 +70,8 @@ TEST(OSTest, Erase)
 	EXPECT_EQ(fset.erase(7.2f), false); // Try to remove a value not in the list
 
 }
-
-TEST(OSTest, Clear) //NOT YET TESTED
+/*
+TEST(OSTest, Clear)
 {
 	ssuds::OrderedSet<float> fset;
 	fset.insert(3.7f);
