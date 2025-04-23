@@ -141,10 +141,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\include\lab06\binary_tree.h" />
+    <ClInclude Include="..\..\..\include\lab06\hash_map.h" />
     <ClInclude Include="..\..\..\include\lab06\linked_list.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\lab06\binary__tree_main.cpp" />
+    <ClCompile Include="..\..\..\src\lab06\maps_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

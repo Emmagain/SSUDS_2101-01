@@ -21,9 +21,12 @@
     <ClInclude Include="..\..\..\include\lab06\binary_tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\lab06\hash_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\lab06\binary__tree_main.cpp">
+    <ClCompile Include="..\..\..\src\lab06\maps_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

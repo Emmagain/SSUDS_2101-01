@@ -1,0 +1,43 @@
+﻿  lab05_main.cpp
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(31,33): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned long', possible loss of data
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(31,33): warning C4244:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(31,33): warning C4244:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(31,33): warning C4244:             _Rep=__int64
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(31,33): warning C4244:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(40,34): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned long', possible loss of data
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(40,34): warning C4244:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(40,34): warning C4244:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(40,34): warning C4244:             _Rep=__int64
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(40,34): warning C4244:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(49,31): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned long', possible loss of data
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(49,31): warning C4244:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(49,31): warning C4244:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(49,31): warning C4244:             _Rep=__int64
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(49,31): warning C4244:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(62,31): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned long', possible loss of data
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(62,31): warning C4244:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(62,31): warning C4244:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(62,31): warning C4244:             _Rep=__int64
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(62,31): warning C4244:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(71,36): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned long', possible loss of data
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(71,36): warning C4244:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(71,36): warning C4244:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(71,36): warning C4244:             _Rep=__int64
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(71,36): warning C4244:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(82,38): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned long', possible loss of data
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(82,38): warning C4244:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(82,38): warning C4244:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(82,38): warning C4244:             _Rep=__int64
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(82,38): warning C4244:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(99,34): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned long', possible loss of data
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(99,34): warning C4244:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(99,34): warning C4244:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(99,34): warning C4244:             _Rep=__int64
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(99,34): warning C4244:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(111,34): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned long', possible loss of data
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(111,34): warning C4244:         with
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(111,34): warning C4244:         [
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(111,34): warning C4244:             _Rep=__int64
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\src\lab05\lab05_main.cpp(111,34): warning C4244:         ]
+C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\include\lab05\array_list_utility.h(202,1): warning C4715: 'ssuds::quick_sort<float>': not all control paths return a value
+  Lab05.vcxproj -> C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101 Repository\build\bin\Debug\Lab05_d.exe

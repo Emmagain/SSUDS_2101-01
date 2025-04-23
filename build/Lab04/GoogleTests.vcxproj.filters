@@ -30,5 +30,8 @@
     <ClCompile Include="..\..\src\lab06\ordered_set_tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\lab06\map_tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
