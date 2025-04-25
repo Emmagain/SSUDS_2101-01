@@ -1,6 +1,6 @@
 ﻿  lab03_main.cpp
 C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02\array_list.h(419,19): warning C4018: '>': signed/unsigned mismatch
-  (compiling source file '../src/lab03/lab03_main.cpp')
+  (compiling source file '../../../src/lab03/lab03_main.cpp')
       C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02\array_list.h(419,19):
       the template instantiation context (the oldest one first) is
           C:\Users\emmal\OneDrive\Desktop\ETEC2101-01\SSUDS_2101-01\include\lab02\array_list.h(353,9):

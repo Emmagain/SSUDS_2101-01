@@ -60,10 +60,9 @@ TEST(HMTest, StreamTest)
 	EXPECT_EQ(ss.str(), "{second:2, first:1}");
 }
 
-
 TEST(HMTest, Contains)
 {
-	ssuds::Map<std::string, int> mmap;
+	ssuds::Map<std::string, float> mmap;
 	mmap["bob"] = 11.3f;		
 	mmap["sue"] = 13.9f;		
 	mmap["carl"] = 15.6f;
@@ -77,9 +76,31 @@ TEST(HMTest, Contains)
 	EXPECT_EQ(mmap.contains(d), false);
 }
 
+
+TEST(HMTest, Find)
+{
+	ssuds::Map<std::string, float> mmap;
+	mmap["bob"] = 11.3f;
+	mmap["sue"] = 13.9f;
+	mmap["carl"] = 15.6f;
+	std::string b = "bob";
+	std::string s = "sue";
+	std::string c = "carl";
+	std::string a = "allie";
+	ssuds::Map<std::string, float>::MAPIterator mit;
+	mit = mmap.find(b);
+	EXPECT_EQ(*mit, std::pair(b, 11.3f));
+	mit = mmap.find(s);
+	EXPECT_EQ(*mit, std::pair(s, 13.9f));
+	mit = mmap.find(c);
+	EXPECT_EQ(*mit, std::pair(c, 15.6f));
+	mit = mmap.find(a);
+	EXPECT_EQ(mit, mmap.end());
+}
+
 TEST(HMTest, Remove)
 {
-	ssuds::Map<std::string, int> mmap;
+	ssuds::Map<std::string, float> mmap;
 	mmap["bob"] = 11.3f;
 	mmap["sue"] = 13.9f;
 	mmap["carl"] = 15.6f;
@@ -105,4 +126,74 @@ TEST(HMTest, Remove)
 	EXPECT_EQ(mmap.contains(s), false);
 	EXPECT_EQ(mmap.contains(c), true);
 	EXPECT_EQ(mmap.contains(a), true);
+}
+
+TEST(HMTest, Iterator)
+{
+	ssuds::Map<std::string, float> mmap;
+	mmap["bob"] = 11.3f;
+	mmap["sue"] = 13.9f;
+	mmap["carl"] = 15.6f;
+	mmap["allie"] = 12.4f;
+	std::string b = "bob";
+	std::string s = "sue";
+	std::string c = "carl";
+	std::string a = "allie";
+	ssuds::Map<std::string, float>::MAPIterator mit = mmap.begin();
+	ASSERT_EQ(*mit, std::pair(s, 13.9f));	//0
+	++mit;
+	//*mit is nullptr						//1
+	++mit;
+	EXPECT_EQ(*mit, std::pair(b,11.3f));	//2
+	++mit;
+	//*mit is nullptr						//3
+	++mit;
+	EXPECT_EQ(*mit, std::pair(a,12.4f));	//4
+	++mit;
+	//*mit is nullptr						//5
+	++mit;
+	//*mit is nullptr						//6
+	++mit;
+	EXPECT_EQ(*mit, std::pair(c,15.6f));	//7
+	++mit;
+	//*mit is nullptr						//8
+	++mit;
+	//*mit is nullptr						//9
+	++mit;
+	EXPECT_EQ(mit, mmap.end());
+}
+
+TEST(HMTest, RevIterator)
+{
+	ssuds::Map<std::string, float> mmap;
+	mmap["bob"] = 11.3f;
+	mmap["sue"] = 13.9f;
+	mmap["carl"] = 15.6f;
+	mmap["allie"] = 12.4f;
+	std::string b = "bob";
+	std::string s = "sue";
+	std::string c = "carl";
+	std::string a = "allie";
+	ssuds::Map<std::string, float>::MAPIterator mit = mmap.rbegin();
+	//*mit is nullptr						//9
+	++mit;
+	//*mit is nullptr						//8
+	++mit;
+	EXPECT_EQ(*mit, std::pair(c, 15.6f));	//7
+	++mit;
+	//*mit is nullptr						//6
+	++mit;
+	//*mit is nullptr						//5
+	++mit;
+	EXPECT_EQ(*mit, std::pair(a, 12.4f));	//4
+	++mit;
+	//*mit is nullptr						//3
+	++mit;
+	EXPECT_EQ(*mit, std::pair(b, 11.3f));	//2
+	++mit;
+	//*mit is nullptr						//1
+	++mit;
+	ASSERT_EQ(*mit, std::pair(s, 13.9f));	//0
+	++mit;
+	EXPECT_EQ(mit, mmap.rend());
 }
