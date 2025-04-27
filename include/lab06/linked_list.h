@@ -118,7 +118,7 @@ namespace ssuds
 			}
 		}
 
-		void insert(const T& new_value, unsigned int index)
+		void insert(const T& new_value, unsigned int index) 
 		{
 			if (index > my_size)
 				throw std::out_of_range("Index out of range");
@@ -188,7 +188,7 @@ namespace ssuds
 			}
 		}
 
-		void clear() // DOESNT WORK -- ASK ABOUT IN CLASS
+		void clear() 
 		{
 			Node* cur_node = my_start;
 			for (unsigned int i = 0; i < my_size; i++)
@@ -484,7 +484,7 @@ namespace ssuds
 			LLIterator temp(this->my_end, LLIteratorDirection::FORWARD);
 			if (it == this->begin())
 			{
-				Node* next = it.get_node()->next_node;
+				Node* next = it.get_node()->next_node;  
 				next->prev_node = nullptr;
 				delete it.get_node();
 				it.set_node(next);
